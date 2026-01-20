@@ -5,8 +5,7 @@ export const personalInfo = {
   bio: 'Hey there! I enjoy building user interfaces and getting creative with utilizing various APIs in order to deliver the best possible user experience with React Native, React, and Flutter. Check out my GitHub as I open source and polish some of my old projects and build some new projects from time to time. Feel free to get in touch with me on other platforms as well.',
   photo: '/images/profile.jpg',
   email: 'willy.spiegel@gmail.com',
-  resumeUrl:
-    'https://www.dropbox.com/s/jpwg76f7znl88th/William_Spiegel_Resume.pdf?dl=1',
+  resumeUrl: '/William_Spiegel_Resume.pdf',
   social: {
     github: 'https://github.com/williamspiegel',
     linkedin: 'https://www.linkedin.com/in/william-spiegel/',
