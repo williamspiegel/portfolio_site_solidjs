@@ -46,7 +46,7 @@ function GameCard(props) {
         <img
           src={game.image}
           alt={game.title}
-          class='w-full h-48 object-cover hover:scale-105 transition-transform duration-300'
+          class='w-full h-48 object-contain hover:scale-105 transition-transform duration-300'
           loading='lazy'
         />
       </a>
