@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 
 export default function ProjectsGrid() {
   return (
-    <section class='py-16'>
+    <section class='pt-12 pb-16'>
       <div class='container-main'>
         {/* Section Title */}
         <h2 class='section-title mb-12'>Projects</h2>

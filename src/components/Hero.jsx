@@ -20,7 +20,7 @@ const DownloadIcon = () => (
 
 export default function Hero() {
   return (
-    <section class='pt-32 pb-16 flex justify-center px-4'>
+    <section class='pt-32 flex justify-center px-4'>
       <div class='glass-card p-8 md:p-12 max-w-xl w-full text-center animate-fade-in-up'>
         {/* Profile Photo */}
         <div class='mb-6 flex justify-center'>
