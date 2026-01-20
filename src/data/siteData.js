@@ -3,7 +3,7 @@ export const personalInfo = {
   name: 'William Spiegel',
   title: 'Mobile Developer',
   bio: 'Hey there! I enjoy building user interfaces and getting creative with utilizing various APIs in order to deliver the best possible user experience with React Native, React, and Flutter. Check out my GitHub as I open source and polish some of my old projects and build some new projects from time to time. Feel free to get in touch with me on other platforms as well.',
-  photo: 'https://i.imgur.com/apDYtEI.jpg',
+  photo: '/images/profile.jpg',
   email: 'willy.spiegel@gmail.com',
   resumeUrl:
     'https://www.dropbox.com/s/jpwg76f7znl88th/William_Spiegel_Resume.pdf?dl=1',
@@ -22,9 +22,11 @@ export const projects = [
     description:
       'A carousel-oriented Reddit client built to improve mobile browsing.',
     images: [
-      'https://i.imgur.com/tp0fSmX.png',
-      'https://i.imgur.com/0tS7s9c.png',
-      'https://i.imgur.com/sJXMXrv.png',
+      '/images/projects/swipey-1.png',
+      '/images/projects/swipey-2.png',
+      '/images/projects/swipey-3.png',
+      '/images/projects/swipey-4.png',
+      '/images/projects/swipey-5.png',
     ],
     fullDescription:
       'The idea for Swipey sprung up from my frustrations with the official Reddit app. There are many long-term bugs with the official app such as collapsing comments spontaneously not working in the middle of browsing content and tons of design elements not fit for a mobile context. I am building Swipey around the way I normally browse Reddit — in a carousel orientation. The app always stays in a carousel screen, with navigation between subreddits being served in a bottom sheet for better thumb reachability.',
@@ -38,11 +40,11 @@ export const projects = [
     description:
       'Healthcare app for managing medications, immunizations, and health documents.',
     images: [
-      'https://play-lh.googleusercontent.com/EHvMaO4uKrd2YN7liIPE9vOn0sIzHXQ-KNJSKkqlYgbrikbjmpVqxK1rt_Kb20JHEGE=w2150-h1230-rw',
-      'https://play-lh.googleusercontent.com/KRdTfi-noYepb1fWbw78SC_vPvNOniAXkxKsN5TgcwEPhyDX3hw-xVLhZ0MlCQb2uqYv=w2150-h1230-rw',
-      'https://play-lh.googleusercontent.com/bjCu7772OUzy69Vexl0KUxUqFyEtPYxC2F3X8n8KijaLShJ65E48s794O9iiXRS0Tg=w2150-h1230-rw',
-      'https://play-lh.googleusercontent.com/O5F9OklS90s_6APYg7tC8XK6dxaR8nDIvoMnBFzTqTUnifDvVe0NZvkvl9Sej_WA_ZM=w2150-h1230-rw',
-      'https://play-lh.googleusercontent.com/uaMDHIQWZAEL7x5IghDEPo-XGaX4d0mDZ82MNo-r6FzQwPJe5qOxBUbmk8uutYfTCUmW=w2150-h1230-rw',
+      '/images/projects/myvax-1.png',
+      '/images/projects/myvax-2.png',
+      '/images/projects/myvax-3.png',
+      '/images/projects/myvax-4.png',
+      '/images/projects/myvax-5.png',
     ],
     fullDescription:
       'MyVax and MIMI-Rx are apps owned by EagleForce targeted towards the healthcare space for patients and providers to have their medications, immunizations, vitals, and healthcare documents all in one digital place. They are essentially the same app but with different branding.',
@@ -59,8 +61,8 @@ export const projects = [
     description:
       'The original React Native implementation of Swipey, now open source.',
     images: [
-      'https://i.imgur.com/CQz8LxI.png',
-      'https://i.imgur.com/DegJA3n.png',
+      '/images/projects/swipey-classic-1.png',
+      '/images/projects/swipey-classic-2.png',
     ],
     fullDescription:
       'This was my first implementation of Swipey. One of the major pitfalls of trying to make complicated and uncommon UI features such as deeply nested collapsible comments is the lack of first party support.',
@@ -73,7 +75,7 @@ export const favoriteGames = [
   {
     id: 1,
     title: 'Path of Exile',
-    image: 'https://i.imgur.com/IINVt8L.png',
+    image: '/images/games/poe.png',
     site: 'https://www.pathofexile.com/',
     reddit: 'https://www.reddit.com/r/pathofexile/',
     steam: 'https://store.steampowered.com/app/238960/Path_of_Exile/',
@@ -84,7 +86,7 @@ export const favoriteGames = [
   {
     id: 2,
     title: 'Old School RuneScape',
-    image: 'https://i.imgur.com/MIUmFXU.png',
+    image: '/images/games/osrs.png',
     site: 'https://oldschool.runescape.com/',
     reddit: 'https://www.reddit.com/r/2007scape/',
     youtube: 'https://www.youtube.com/user/OldSchoolRSCommunity',
@@ -95,7 +97,7 @@ export const favoriteGames = [
   {
     id: 3,
     title: 'Risk of Rain 2',
-    image: 'https://i.imgur.com/Vy4aKLh.png',
+    image: '/images/games/ror2.png',
     site: 'https://www.riskofrain.com/',
     steam: 'https://store.steampowered.com/app/632360/Risk_of_Rain_2/',
     reddit: 'https://www.reddit.com/r/riskofrain/',
