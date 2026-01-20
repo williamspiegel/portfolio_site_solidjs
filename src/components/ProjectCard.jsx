@@ -1,18 +1,99 @@
+import { createSignal, For, Show } from 'solid-js';
+
+const ChevronLeft = () => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='20'
+    height='20'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    stroke-width='2'
+    stroke-linecap='round'
+    stroke-linejoin='round'
+  >
+    <polyline points='15 18 9 12 15 6' />
+  </svg>
+);
+
+const ChevronRight = () => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='20'
+    height='20'
+    viewBox='0 0 24 24'
+    fill='none'
+    stroke='currentColor'
+    stroke-width='2'
+    stroke-linecap='round'
+    stroke-linejoin='round'
+  >
+    <polyline points='9 18 15 12 9 6' />
+  </svg>
+);
+
 export default function ProjectCard(props) {
+  const [currentIndex, setCurrentIndex] = createSignal(0);
+  const images = () => props.project.images || [];
+  const hasMultipleImages = () => images().length > 1;
+
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev + 1) % images().length);
+  };
+
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev - 1 + images().length) % images().length);
+  };
+
   return (
-    <div class='flex-shrink-0 w-[280px] md:w-[320px]'>
+    <div class='w-full'>
       <div class='glass-card h-full overflow-hidden'>
-        {/* Phone Frame */}
-        <div class='p-4'>
+        {/* Phone Frame with Image Carousel */}
+        <div class='p-4 relative group'>
           <div class='phone-frame'>
             <div class='phone-screen'>
               <img
-                src={props.project.images[0]}
-                alt={props.project.title}
+                src={images()[currentIndex()]}
+                alt={`${props.project.title} screenshot ${currentIndex() + 1}`}
                 loading='lazy'
               />
             </div>
           </div>
+
+          {/* Carousel Navigation - only show if multiple images */}
+          <Show when={hasMultipleImages()}>
+            <button
+              onClick={prevImage}
+              class='absolute left-6 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/80'
+              aria-label='Previous image'
+            >
+              <ChevronLeft />
+            </button>
+            <button
+              onClick={nextImage}
+              class='absolute right-6 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/80'
+              aria-label='Next image'
+            >
+              <ChevronRight />
+            </button>
+
+            {/* Image Indicators */}
+            <div class='absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-1.5'>
+              <For each={images()}>
+                {(_, index) => (
+                  <button
+                    onClick={() => setCurrentIndex(index())}
+                    class={`w-2 h-2 rounded-full transition-all ${
+                      currentIndex() === index()
+                        ? 'bg-cyan-400 w-4'
+                        : 'bg-white/50 hover:bg-white/80'
+                    }`}
+                    aria-label={`Go to image ${index() + 1}`}
+                  />
+                )}
+              </For>
+            </div>
+          </Show>
         </div>
 
         {/* Project Info */}
