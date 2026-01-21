@@ -79,7 +79,7 @@ export default function Contact() {
         <div class='max-w-lg mx-auto'>
           <h1 class='section-title mb-12'>Contact</h1>
 
-          <div class='glass-card p-8 space-y-8'>
+          <div class='glass-card glass-card-no-hover p-8 space-y-8'>
             {/* Email */}
             <div class='space-y-3'>
               <div class='flex items-center gap-3 text-cyan-400'>

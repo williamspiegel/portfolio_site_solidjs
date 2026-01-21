@@ -35,7 +35,7 @@ export default function Navbar() {
       <div class='container-main'>
         <div class='flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6'>
           {/* Navigation Links */}
-          <div class='flex items-center gap-1 sm:gap-2 glass-card px-2 py-1.5'>
+          <div class='flex items-center gap-1 sm:gap-2 glass-card glass-card-no-hover px-2 py-1.5'>
             <For each={navLinks}>
               {(link) => (
                 <A

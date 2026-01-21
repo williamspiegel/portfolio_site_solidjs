@@ -112,6 +112,11 @@ body {
   border-color: rgba(0, 212, 255, 0.4);
 }
 
+.glass-card-no-hover:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .glass-card-elevated {
   background: var(--color-surface-elevated);
   backdrop-filter: blur(16px);
@@ -178,7 +183,6 @@ body {
 
 .social-icon:hover {
   color: var(--color-primary);
-  transform: translateY(-2px);
 }
 
 /* Project Card Styles */
