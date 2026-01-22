@@ -33,8 +33,8 @@ export default function Navbar() {
   return (
     <nav class='fixed top-0 left-0 right-0 z-50 py-4'>
       <div class='container-main'>
-        <div class='flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6'>
-          {/* Navigation Links */}
+        <div class='flex items-center justify-center'>
+          {/* Navigation Links & Social Icons */}
           <div class='flex items-center gap-1 sm:gap-2 glass-card glass-card-no-hover px-2 py-1.5'>
             <For each={navLinks}>
               {(link) => (
@@ -48,10 +48,11 @@ export default function Navbar() {
                 </A>
               )}
             </For>
-          </div>
 
-          {/* Social Icons */}
-          <div class='flex items-center gap-2'>
+            {/* Divider */}
+            <div class='w-px h-5 bg-slate-600 mx-1' />
+
+            {/* Social Icons */}
             <a
               href={personalInfo.social.github}
               target='_blank'
