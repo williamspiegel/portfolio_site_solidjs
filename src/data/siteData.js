@@ -2,7 +2,7 @@
 export const personalInfo = {
   name: 'William Spiegel',
   title: 'Mobile Developer',
-  bio: 'Hey there! I enjoy building user interfaces and getting creative with utilizing various APIs in order to deliver the best possible user experience with React Native, React, and Flutter. Check out my GitHub as I open source and polish some of my old projects and build some new projects from time to time. Feel free to get in touch with me on other platforms as well.',
+  bio: 'Mobile developer specializing in cross-platform and native app development. I build polished, user-focused applications using React Native, Flutter, and native Android and iOS technologies. Passionate about crafting intuitive interfaces and leveraging APIs to deliver seamless user experiences. Explore my open-source projects on GitHub or connect with me to discuss opportunities.',
   photo: '/images/profile.jpg',
   email: 'willy.spiegel@gmail.com',
   resumeUrl: '/William_Spiegel_Resume.pdf',
